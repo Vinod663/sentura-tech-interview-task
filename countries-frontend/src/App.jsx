@@ -5,7 +5,6 @@ function App() {
   const [search, setSearch] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
 
-  // Fetch from your Spring Boot backend
   useEffect(() => {
     fetch(`http://localhost:8080/api/countries?search=${search}`)
       .then(res => res.json())
