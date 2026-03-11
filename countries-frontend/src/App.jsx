@@ -26,7 +26,8 @@ function App() {
       />
 
       <table border="1" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
-        <thead style={{ backgroundColor: '#f4f4f4' }}>
+        {/* ADDED color: '#000' HERE SO THE TEXT IS BLACK ON THE GRAY BACKGROUND */}
+        <thead style={{ backgroundColor: '#f4f4f4', color: '#000' }}>
           <tr>
             <th style={{ padding: '10px' }}>Flag</th>
             <th style={{ padding: '10px' }}>Name</th>
@@ -54,7 +55,7 @@ function App() {
           position: 'fixed', top: 0, left: 0, width: '100%', height: '100%',
           backgroundColor: 'rgba(0,0,0,0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center'
         }}>
-          <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '10px', minWidth: '350px', textAlign: 'center' }}>
+          <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '10px', minWidth: '350px', textAlign: 'center', color: '#000' }}>
             <h2>{selectedCountry.name}</h2>
             <img src={selectedCountry.flag} alt="flag" width="120" style={{ marginBottom: '15px', border: '1px solid #ddd' }} />
             <p style={{ textAlign: 'left' }}><strong>Capital:</strong> {selectedCountry.capital}</p>
